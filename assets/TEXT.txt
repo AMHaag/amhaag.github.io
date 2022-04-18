@@ -1,0 +1,23 @@
+var passwordNumbers = ' ';
+  var passwordLower = ' ';
+  var passwordUpper = ' ';
+  
+  
+  var i=0;
+  var taco ='';
+  while (i <= password.length){
+      taco = password.charAt(i);
+      if (!isNaN(taco * 1)){
+          var passwordNumbers = true;
+      }else{
+          if (taco == taco.toUpperCase()) {
+              var passwordUpper = true;
+          }
+          if (taco == taco.toLowerCase()){
+              var passwordLower = true;
+          }
+      }
+      i++;
+  }
+  
+  console.log("numbers " + passwordNumbers + " Upper " + passwordUpper + " Lower " + passwordLower);
